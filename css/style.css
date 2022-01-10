@@ -1,0 +1,53 @@
+.container {
+  max-width: 600px;
+  max-height: 200px;
+  margin: 100px auto;
+}
+.dino {
+}
+
+.dino_run,
+.dino_down,
+.dino_start,
+.dino_dead {
+  position: relative;
+  display: none;
+}
+.dino_run img,
+.dino_down img,
+.dino_start img,
+.dino_dead img {
+  position: absolute;
+  top: 0;
+}
+
+.dino_run_1,
+.dino_down_1 {
+  animation: run 0.2s linear infinite;
+}
+.dino_run_2,
+.dino_down_2 {
+  animation: run 0.2s linear infinite;
+  animation-delay: 0.1s;
+}
+.dino_down {
+  top: 17px;
+}
+
+@keyframes run {
+  0% {
+    opacity: 0;
+  }
+  49% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.dino_start {
+}
