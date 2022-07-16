@@ -5,11 +5,11 @@
 }
 
 .container {
-  /* background: aqua; */
   height: 200px;
   position: relative;
   overflow: hidden;
 }
+
 .border {
   display: flex;
   flex-wrap: nowrap;
@@ -24,6 +24,15 @@
   width: 1200px;
   height: 100%;
 }
+.counter {
+  position: absolute;
+  top: 30px;
+  left: 550px;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  color: #535353;
+}
 .dino {
   position: absolute;
   left: 0;
@@ -34,6 +43,7 @@
 .dino_run,
 .dino_start,
 .dino_dead {
+  z-index: 1;
   position: relative;
   display: none;
   width: 100%;
@@ -59,15 +69,14 @@
   width: 55px;
   height: 26px;
 }
-.dino_run_1,
-.dino_down_1 {
+.run_1 {
   animation: run 0.2s linear infinite;
 }
-.dino_run_2,
-.dino_down_2 {
+.run_2 {
   animation: run 0.2s linear infinite;
   animation-delay: 0.1s;
 }
+
 .dino_down {
   top: 15px;
 }
@@ -89,7 +98,7 @@
 
 .bird {
   position: absolute;
-  bottom: 40px;
+  bottom: 30px;
   right: 0;
   height: 40px;
   width: 40px;
@@ -136,4 +145,22 @@
   height: 50px;
   bottom: 0;
   right: 100px;
+}
+
+.reload {
+  z-index: 1;
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 250px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #535353;
+}
+.btn {
+  border: transparent;
+  background-color: #fff;
+}
+.reload_btn img {
+  width: 30px;
 }
